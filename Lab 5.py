@@ -105,15 +105,15 @@ def Building_BST(f1,f2):
 
 
 def findWord(T,k):
-    temp = T  
-    while temp is not None:  
-        if temp.item[0] == k:
-            temp.item[1]
-            return temp.item[1]
-        elif temp.item[0] > k:  
-            temp = temp.left
-        elif temp.item[0]<k:  
-            temp = temp.right
+    t = T  
+    while t is not None:  
+        if t.item[0] == k:
+            #temp.item[1]
+            return t.item[1]
+        elif t.item[0] > k:  
+            t= t.left
+        elif t.item[0]<k:  
+            t = t.right
     return None 
 
 #counts the number of nodes in the tree
